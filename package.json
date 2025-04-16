@@ -2,12 +2,16 @@
   "dependencies": {
     "discord.js": "^14.18.0",
     "dotenv": "^16.4.7",
+    "electron": "^35.1.5",
     "picocolors": "^1.1.1"
   },
   "name": "hiroshima-remake",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "main": "./src/index.js",
   "type": "module",
+  "scripts": {
+    "startTailwind": "npx @tailwindcss/cli -i ./src/electron/app/css/tailwindInput.css -o ./src/electron/app/css/tailwindOutput.css --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/drowning14/hiroshima-remake.git"
@@ -19,5 +23,9 @@
     "url": "https://github.com/drowning14/hiroshima-remake/issues"
   },
   "homepage": "https://github.com/drowning14/hiroshima-remake#readme",
-  "description": "A powerful and high-speed bot designed for mass server destruction. Built for efficiency, it delivers rapid execution with minimal effort. Whether for testing, experimentation, or other purposes, this bot provides a seamless experience."
+  "description": "A powerful and high-speed bot designed for mass server destruction. Built for efficiency, it delivers rapid execution with minimal effort. Whether for testing, experimentation, or other purposes, this bot provides a seamless experience.",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
 }
